@@ -12,7 +12,11 @@
     "node": ">=16.x",
     "yarn": "1.x"
   },
-  "repository": "https://github.com/strangeoficial/monorepo-template",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/strangeoficial/monorepo-template"
+  },
+  "keywords": [ "asa", "asainovacoes", "onix", "finanças", "aeroportos",  "aeronaves", "administração", "clientes", "funcionários", "serviços" ],
   "author": "Alan Silva <105025356+strangeoficial@users.noreply.github.com>",
   "license": "GPL-3.0",
   "private": true,
@@ -29,18 +33,6 @@
     "doc": "docs",
     "lib": "resources"
   },
-  "keywords": [
-    "asa",
-    "asainovacoes",
-    "onix",
-    "finanças",
-    "aeroportos",
-    "aeronaves",
-    "administração",
-    "clientes",
-    "funcionários",
-    "serviços"
-  ],
   "bugs": {
     "url": "https://github.com/asainovacoes/onix/issues"
   },
