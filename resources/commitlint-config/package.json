@@ -1,0 +1,12 @@
+{
+  "name": "@root/commitlint-config",
+  "version": "0.0.1",
+  "private": true,
+  "license": "GPL-3",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "@commitlint/cli": "17.0.3",
+    "@commitlint/config-conventional": "17.0.3",
+    "cz-conventional-changelog": "3.3.0"
+  }
+}
