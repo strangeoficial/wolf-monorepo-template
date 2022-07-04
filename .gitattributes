@@ -1,0 +1,178 @@
+# Impede que eslintrc apareça no cálculo de linguagem do GitHub
+# (Parece não haver maneira de impedir que a detecção de idioma
+# chamando falsamente os comandos da CLI Javascript devido à linha shebang)
+
+################################################
+# Arquivos javascript de Configuração
+################################################
+
+.eslintrc.js linguist-documentation
+prettier.config.js linguist-documentation
+commitlint.config.js linguist-documentation
+jest.config.ts linguist-documentation
+jest.config.js linguist-documentation
+
+################################################
+# Arquivos de Documentação
+################################################
+
+*.md linguist-documentation
+*.MD linguist-documentation
+*.yml linguist-documentation
+*.yaml linguist-documentation
+LICENSE linguist-documentation
+Makefile linguist-documentation
+
+################################################
+# JavaScript Compilado
+################################################
+
+dist/ linguist-generated
+next/ linguist-generated
+vercel/ linguist-generated
+build/ linguist-generated
+
+###############################################################################
+# Arquivos de texto
+###############################################################################
+
+* text=auto
+
+###############################################################################
+# Arquivos do Heroku
+###############################################################################
+
+Procfile    text
+.slugignore text
+
+###############################################################################
+# Arquivos de Documentos
+###############################################################################
+
+*.doc   diff=astextplain
+*.DOC   diff=astextplain
+*.docx  diff=astextplain
+*.DOCX  diff=astextplain
+*.dot   diff=astextplain
+*.DOT   diff=astextplain
+*.pdf   diff=astextplain
+*.PDF   diff=astextplain
+*.rtf   diff=astextplain
+*.RTF   diff=astextplain
+*.odt   diff=astextplain
+*.ODT   diff=astextplain
+*.xls   diff=astextplain
+*.XLS   diff=astextplain
+*.xlsx  diff=astextplain
+*.XLSX  diff=astextplain
+*.ods   diff=astextplain
+
+###############################################################################
+# Arquivos estáticos
+###############################################################################
+
+*.html linguist-vendored-filenames=true
+*.jinja2 linguist-vendored-filenames=true
+*.sass linguist-vendored-filenames=true
+*.css linguist-vendored-filenames=true
+*.js  linguist-vendored-filenames=true
+*.hbs linguist-vendored-filenames=true
+*.handlebars linguist-vendored-filenames=true
+*.ts linguist-vendored-filenames=true
+*.jsx linguist-vendored-filenames=true
+*.tsx linguist-vendored-filenames=true
+*.map linguist-vendored-filenames=true
+
+###############################################################################
+# Ignorando os tipos de Arquivos
+###############################################################################
+
+*.js linguist-ignore-filenames=true
+*.jsx linguist-ignore-filenames=true
+*.css linguist-ignore-filenames=true
+*.html linguist-ignore-filenames=true
+*.jar linguist-ignore-filenames=true
+*.java linguist-ignore-filenames=true
+
+###############################################################################
+# Arquivos diversos de Configuração
+###############################################################################
+
+*.bowerrc      text
+*.cnf          text
+*.conf         text
+*.config       text
+.browserslistrc text
+.editorconfig  text
+.gitattributes text
+.gitconfig     text
+.gitignore     text
+.htaccess      text
+*.npmignore    text
+*.npmrc
+browserslist   text
+
+###############################################################################
+# Arquivos binários de imagens
+###############################################################################
+
+*.jpeg binary
+*.jpg  binary
+*.gif  binary
+*.svg  text
+*.webp binary
+
+###############################################################################
+# Arquivos binários de Vídeos
+###############################################################################
+
+*.3gpp binary
+*.3gp  binary
+*.as   binary
+*.asf  binary
+*.asx  binary
+*.fla  binary
+*.flv  binary
+*.m4v  binary
+*.mng  binary
+*.mov  binary
+*.mp4  binary
+*.mpeg binary
+*.mpg  binary
+*.ogv  binary
+*.swc  binary
+*.swf  binary
+*.webm binary
+
+###############################################################################
+# Arquivos binários de Audio
+###############################################################################
+
+*.kar  binary
+*.m4a  binary
+*.mid  binary
+*.midi binary
+*.mp3  binary
+*.ogg  binary
+*.ra   binary
+
+###############################################################################
+# Arquivos binários de Fontes
+###############################################################################
+
+*.ttf   binary
+*.eot   binary
+*.otf   binary
+*.woff  binary
+*.woff2 binary
+
+###############################################################################
+# Arquivos binários de Arquivos Compactados
+###############################################################################
+
+*.7z  binary
+*.gz  binary
+*.jar binary
+*.rar binary
+*.tar binary
+*.zip binary
