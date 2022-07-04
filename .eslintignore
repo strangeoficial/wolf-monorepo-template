@@ -1,0 +1,16 @@
+*.spec.ts
+*.spec.js
+*.spec.ts
+*.test.js
+jest.config.ts
+jest.config.js
+lib/
+dist/
+.nest/
+.build/
+.nest/
+.vercel/
+lib/
+node_modules/
+resources/*
+.eslintrc.js
