@@ -1,0 +1,38 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+max_line_length = 120
+
+# Indentation override for documentation files
+[*.md]
+trim_trailing_whitespace = false
+
+# Indentation override for css related files
+[*.{css,styl,scss,less,sass}]
+indent_style = space
+indent_size = 4
+
+# Indentation override for python files
+[*.{py,jinja2}]
+indent_style = space
+indent_size = 4
+insert_final_newline = false
+
+# Indentation override for shell script files
+[*.sh]
+indent_style = space
+indent_size = 4
+
+# Indentation override for makefiles
+[Makefile]
+indent_style = tab
+indent_size = 4
