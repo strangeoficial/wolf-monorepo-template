@@ -1,0 +1,11 @@
+{
+  "name": "@root/commitizen-config",
+  "version": "1.0.0",
+  "private": true,
+  "license": "GPL-3",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "commitizen": "4.2.4",
+    "cz-customizable": "6.3.0"
+  }
+}
