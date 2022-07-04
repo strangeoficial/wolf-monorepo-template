@@ -1,0 +1,31 @@
+{
+  "command": {
+    "create": {
+      "homepage": "https://github.com/strangeoficial/monorepo-template",
+      "license": "GPL-3.0"
+    },
+    "publish": {
+      "tempTag": true
+    },
+    "version": {
+      "allowBranch": "main",
+      "conventionalCommits": true,
+      "createRelease": "github",
+      "exact": true,
+      "message": "chore(release): %s"
+    }
+  },
+  "ignoreChanges": [
+    "**/.husky/**",
+    "**/docs/**",
+    "**/*.md"
+  ],
+  "packages": [
+    "services/*",
+    "resources/*",
+    "packages/*"
+  ],
+  "useWorkspaces": true,
+  "npmClient": "yarn",
+  "version": "1.0.0"
+}
