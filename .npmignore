@@ -1,0 +1,6 @@
+docs/
+.github/
+.vscode/
+.husky/
+.git/
+build/
