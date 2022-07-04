@@ -1,0 +1,9 @@
+{
+  "name": "@root/admin",
+  "version": "1.0.0",
+  "private": true,
+  "license": "GPL-3.0",
+  "scripts": {
+    "cm": "../../node_modules/cz-customizable/standalone.js"
+  }
+}
