@@ -3,8 +3,65 @@
   "version": "independent",
   "description": "Wolf Monorepo é um template básico para projeto em monorepo construido em nodejs.",
   "main": "packages/index.js",
+  "workspaces": [
+    "packages/*",
+    "resources/*",
+    "services/*"
+  ],
+  "engines": {
+    "node": ">=16.x",
+    "yarn": "1.x"
+  },
   "repository": "https://github.com/strangeoficial/monorepo-template",
   "author": "Alan Silva <105025356+strangeoficial@users.noreply.github.com>",
   "license": "GPL-3.0",
-  "private": true
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:global": "jest --verbose --coverage --passWithNoTests",
+    "check": "lerna changed",
+    "lint": "eslint --fix",
+    "release": "semantic-release --no-ci",
+    "cm": "./node_modules/cz-customizable/standalone.js"
+  },
+  "directories": {
+    "doc": "docs",
+    "lib": "resources"
+  },
+  "keywords": [
+    "asa",
+    "asainovacoes",
+    "onix",
+    "finanças",
+    "aeroportos",
+    "aeronaves",
+    "administração",
+    "clientes",
+    "funcionários",
+    "serviços"
+  ],
+  "bugs": {
+    "url": "https://github.com/asainovacoes/onix/issues"
+  },
+  "homepage": "https://github.com/asainovacoes/onix#readme",
+  "wiki": "https://github.com/asainovacoes/onix/wiki",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  },
+  "cz-customizable": {
+    "config": "./resources/commitizen-config/lib/index.js"
+  },
+  "lint-staged": {
+    "packages/web/**/*.tsx": [
+      "eslint --fix"
+    ],
+    "packages/server/src/**/*.ts": [
+      "yarn jest --verbose --coverage --passWithNoTests"
+    ],
+    "packages/desktop/src/**/*.js": [
+      "yarn jest --verbose --coverage --passWithNoTests"
+    ]
+  }
 }
