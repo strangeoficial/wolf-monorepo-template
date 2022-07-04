@@ -1,6 +1,6 @@
 {
   "name": "monorepo-template",
-  "version": "1.0.0",
+  "version": "independent",
   "description": "Wolf Monorepo é um template básico para projeto em monorepo construido em nodejs.",
   "main": "packages/index.js",
   "repository": "https://github.com/strangeoficial/monorepo-template",
