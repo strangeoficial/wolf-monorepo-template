@@ -1,6 +1,6 @@
 {
   "name": "monorepo-template",
-  "version": "independent",
+  "version": "1.0.0",
   "description": "Wolf Monorepo é um template básico para projeto em monorepo construido em nodejs.",
   "main": "packages/index.js",
   "workspaces": [
@@ -20,6 +20,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:global": "jest --verbose --coverage --passWithNoTests",
     "check": "lerna changed",
+    "postinstall": "yarn link",
     "lint": "eslint --fix",
     "release": "semantic-release --no-ci",
     "cm": "./node_modules/cz-customizable/standalone.js"
@@ -63,5 +64,8 @@
     "packages/desktop/src/**/*.js": [
       "yarn jest --verbose --coverage --passWithNoTests"
     ]
+  },
+  "devDependencies": {
+    "lerna": "^5.1.6"
   }
 }
