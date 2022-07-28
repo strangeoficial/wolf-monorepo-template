@@ -1,6 +1,4 @@
-# Impede que eslintrc apareça no cálculo de linguagem do GitHub
-# (Parece não haver maneira de impedir que a detecção de idioma
-# chamando falsamente os comandos da CLI Javascript devido à linha shebang)
+# referência https://github.com/github/linguist/issues/4769
 
 ################################################
 # Arquivos javascript de Configuração
@@ -16,6 +14,7 @@ jest.config.js linguist-documentation
 # Arquivos de Documentação
 ################################################
 
+docs/* linguist-documentation
 *.md linguist-documentation
 *.MD linguist-documentation
 *.yml linguist-documentation
@@ -87,12 +86,12 @@ Procfile    text
 # Ignorando os tipos de Arquivos
 ###############################################################################
 
-*.js linguist-ignore-filenames=true
-*.jsx linguist-ignore-filenames=true
-*.css linguist-ignore-filenames=true
-*.html linguist-ignore-filenames=true
-*.jar linguist-ignore-filenames=true
-*.java linguist-ignore-filenames=true
+*.js linguist-detectable=false
+*.jsx linguist-detectable=false
+*.css linguist-detectable=false
+*.html linguist-detectable=false
+*.jar linguist-detectable=false
+*.java linguist-detectable=false
 
 ###############################################################################
 # Arquivos diversos de Configuração
